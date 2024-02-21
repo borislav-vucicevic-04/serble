@@ -1,0 +1,17 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Table -->
+  <rect width="300" height="300" x="0" y="0" fill="none" stroke="none" rx="10" ry="10"/>
+
+  <!-- Cells -->
+  <rect width="90" height="90" x="5" y="5" fill="#D22A3C" rx="10" ry="10"/>
+  <rect width="90" height="90" x="105" y="5" fill="#D22A3C" rx="10" ry="10"/>
+  <rect width="90" height="90" x="205" y="5" fill="#87BC4A" rx="10" ry="10"/>
+  
+  <rect width="90" height="90" x="5" y="105" fill="#D22A3C" rx="10" ry="10"/>
+  <rect width="90" height="90" x="105" y="105" fill="#ECDB35" rx="10" ry="10"/>
+  <rect width="90" height="90" x="205" y="105" fill="#87BC4A" rx="10" ry="10"/>
+  
+  <rect width="90" height="90" x="5" y="205" fill="#87BC4A" rx="10" ry="10"/>
+  <rect width="90" height="90" x="105" y="205" fill="#87BC4A" rx="10" ry="10"/>
+  <rect width="90" height="90" x="205" y="205" fill="#87BC4A" rx="10" ry="10"/>
+</svg>

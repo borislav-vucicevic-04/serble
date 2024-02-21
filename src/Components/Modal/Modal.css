@@ -1,0 +1,49 @@
+:root {
+  --modal-padding: 1.5rem;
+  --modal-borderRadius: 1.5rem;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(19, 19, 19, 0.5);
+}
+.modal .modal-body {
+  position: relative;
+  box-sizing: border-box;
+  padding: var(--modal-padding);
+  background-color: var(--white);
+  border: solid 2px var(--black);
+  border-radius: var(--modal-borderRadius);
+  width: 60%;
+  max-height: 90%;
+  animation: move-body 0.5s;
+  overflow: auto;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+@keyframes move-body {
+  from {
+    bottom: 100%;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .modal .modal-body {
+    width: 90%;
+  }
+}

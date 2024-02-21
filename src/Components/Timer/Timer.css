@@ -1,0 +1,30 @@
+:root {
+  --timer-height: 4.5rem;
+  --timer-borderWidth: 0.25rem; 
+  --timer-fontSize: 3rem;
+  --timer-span-paddingBottom: 1rem;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--timer-height);
+  width: calc(var(--timer-height) * 2);
+  border-radius: 0 0 var(--timer-height) var(--timer-height);
+  position: fixed;
+  border: solid var(--timer-borderWidth) var(--teal);
+  top: 0;
+  border-top: none;
+  left: calc(50% - var(--timer-height));
+  font-size: var(--timer-fontSize);
+  font-weight: bold;
+  color: var(--black);
+  background-color: var(--white);
+  z-index: 999;
+}
+.timer span {
+  appearance: none;
+  padding: 0;
+  line-height: 0 !important;
+  padding-bottom: var(--timer-span-paddingBottom);
+}

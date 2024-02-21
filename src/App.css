@@ -1,0 +1,145 @@
+:root {
+  --red: #D22A3C;
+  --orange: #F68D23;
+  --yellow: #ECDB35;
+  --green: #87BC4A;
+  --teal: #27AB88;
+  --black: #131313;
+  --white: #fefefe;
+  --gray: hsl(200, 3%, 52%);
+  --light-gray: hsl(200, 3%, 90%);
+  --dialogContent-fontSize: 4rem;
+  --dialogContent-gap: 1rem;
+  --dialogContent-button-fontSize: 2.5rem;
+  --dialogContent-button-borderRadius: 2rem;
+  --dialogContent-button-paddingLeftRight: 1rem;
+  --dialogContent-p-fontSize: 2rem;
+  --helpDialog-fontSize: 1.35rem;
+  --helpDialog-p-marginBottom: 2.25rem;
+  --helpDialog-ul-li-marginBottom: 1.25rem;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App .modal-content{
+  width: 100%;
+  display: grid;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: column;
+  row-gap: var(--dialogContent-gap);
+  column-gap: var(--dialogContent-gap);
+}
+.App .modal-content h1 {
+  font-size: var(--dialogContent-fontSize);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  grid-column-end: span 2;
+  text-align: center;
+}
+.App .modal-content select, .App .modal-content button {
+  background-color: var(--teal);
+  color: var(--white);
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  font-size: var(--dialogContent-button-fontSize);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--dialogContent-button-borderRadius);
+  box-sizing: border-box;
+  padding-left: var(--dialogContent-button-paddingLeftRight);
+}
+.App .modal-content#victory-dialog {
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+.App .modal-content#victory-dialog h1 {
+  color: var(--green);
+}
+.App .modal-content#defeat-dialog {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+.App .modal-content#defeat-dialog h1 {
+  color: var(--red);
+}
+.App .modal-content#defeat-dialog p {
+  font: inherit;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+  font-size: var(--dialogContent-p-fontSize);
+  grid-column-end: span 2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.App .modal-body:has(div#help-dialog) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.App .modal-body #help-dialog {
+  font-size: var(--helpDialog-fontSize);
+  color: var(--black);
+  position: relative;
+}
+#help-dialog p {
+  margin: 0;
+  margin-bottom: var(--helpDialog-p-marginBottom);
+}
+#help-dialog ul,
+#help-dialog li {
+  margin: 0;
+  margin-bottom: var(--helpDialog-ul-li-marginBottom);
+}
+.App .modal-body #help-dialog .button{
+  padding-bottom: var(--helpDialog-p-marginBottom);
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.App #help-dialog .button button{
+  flex: 1;
+  font-size: var(--helpDialog-fontSize);
+  padding: calc(var(--helpDialog-fontSize) / 2);
+  border-radius: calc(var(--helpDialog-fontSize) / 2);
+  background-color: var(--teal);
+  border: none;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+    --dialogContent-fontSize: 3rem;
+    --dialogContent-button-fontSize: 2rem;
+    --dialogContent-button-borderRadius: 1.5rem;
+    --dialogContent-button-paddingLeftRight: 1rem;
+    --dialogContent-p-fontSize: 1.5rem;
+  }
+  .App .modal-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .App .modal-content select {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  :root {
+    font-size: 12px;
+    --dialogContent-fontSize: 2.5rem;
+    --dialogContent-button-fontSize: 1.5rem;
+    --dialogContent-button-borderRadius: 1rem;
+    --dialogContent-button-paddingLeftRight: 1rem;
+    --dialogContent-p-fontSize: 1.5rem;
+  }
+}

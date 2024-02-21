@@ -1,0 +1,89 @@
+:root {
+  --table-gap: 0.5rem;
+  --table-fontSize: 2rem;
+  --box-borderRadius: 0.5rem;
+  --gamemode-5-boxSize: 4rem;
+  --gamemode-6-boxSize: 3.5rem;
+  --gamemode-7-boxSize: 3rem;
+  --table-width-5: calc(var(--gamemode-5-boxSize) * 5 + var(--table-gap)*4);
+  --table-width-6: calc(var(--gamemode-6-boxSize) * 6 + var(--table-gap)*5);
+  --table-width-7: calc(var(--gamemode-7-boxSize) * 7 + var(--table-gap)*6);
+}
+.table {
+  margin-top: var(--timer-height);
+  display: grid;
+  column-gap: var(--table-gap);
+  row-gap: var(--table-gap);
+  justify-content: center;
+  align-items: stretch;
+  font-weight: 600;;
+  color: var(--white);
+}
+.table .letter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: var(--gray);
+  aspect-ratio: 1 / 1;
+  font-size: var(--table-fontSize);
+  border-radius: var(--box-borderRadius);
+  text-transform: uppercase;
+  transition: all 0.3s;
+  transform: rotateY(0deg);
+}
+.table .letter-wrapper.green {
+  background-color: var(--green);
+  transform: rotateY(360deg);
+}
+.table .letter-wrapper.yellow {
+  background-color: var(--yellow);
+  transform: rotateY(360deg);
+}
+.table .letter-wrapper.red {
+  background-color: var(--red);
+  transform: rotateY(360deg);
+}
+.table .solution {
+  border-radius: var(--box-borderRadius);
+  border: solid 2px var(--black);
+  font-family: inherit;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--table-fontSize);
+  color: var(--black);
+  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  line-height: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.table .solution input {
+  appearance: none;
+  font: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  line-height: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.25rem;
+}
+.table .solution:focus-within {
+  border-color: var(--teal);
+}
+.table .solution input:focus {
+  outline: none;
+}

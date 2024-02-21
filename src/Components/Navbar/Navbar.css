@@ -1,0 +1,39 @@
+:root {
+  --navbar-height: 3rem;
+  --navbar-padding: 0.5rem;
+  --navbar-fontSize: 1.25rem;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--navbar-height);
+  box-sizing: border-box;
+  padding: var(--navbar-padding);
+  background-color: var(--teal);
+  display: flex;
+  font-size: var(--navbar-fontSize);
+  letter-spacing: 4px;
+}
+.navbar #gamemode {
+  font: inherit;
+  letter-spacing: inherit;
+  font-weight: 600;
+  background-color: var(--teal);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+}
+.navbar #gamemode:focus {
+  outline: none;
+}
+.navbar #gamemode option {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+.navbar img {
+  margin-left: auto;
+  cursor: pointer;
+}
