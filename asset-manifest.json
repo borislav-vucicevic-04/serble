@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/serble/static/css/main.72a563ba.css",
+    "main.js": "/serble/static/js/main.59313327.js",
+    "static/js/453.b6d1987b.chunk.js": "/serble/static/js/453.b6d1987b.chunk.js",
+    "static/media/help.svg": "/serble/static/media/help.f834ed77f9562ddbc705349bfcea6d88.svg",
+    "index.html": "/serble/index.html",
+    "main.72a563ba.css.map": "/serble/static/css/main.72a563ba.css.map",
+    "main.59313327.js.map": "/serble/static/js/main.59313327.js.map",
+    "453.b6d1987b.chunk.js.map": "/serble/static/js/453.b6d1987b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72a563ba.css",
+    "static/js/main.59313327.js"
+  ]
+}
