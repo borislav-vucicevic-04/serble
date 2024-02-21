@@ -40,7 +40,7 @@ export default class App extends Component<{}, State> {
       showDefeatDialog: false,
       showHelpDialog: true,
       gmSelectorValue: 5,
-      time: 60,
+      time: 120,
     }
   }
   // event handlers
@@ -90,7 +90,7 @@ export default class App extends Component<{}, State> {
     const index = Math.floor(Math.random() * length);
     this.setState({
       wantedWord: words[index],
-      time: 60
+      time: 120
     }, () => {this.resetTable(); console.log(this.state.wantedWord)})
   }
   componentDidMount(): void {
