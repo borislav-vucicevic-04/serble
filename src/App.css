@@ -132,6 +132,9 @@
   .App .modal-content select {
     text-align: center;
   }
+  .App .modal-body:has(div#help-dialog) {
+    border-radius: var(--modal-borderRadius);
+  }
 }
 @media only screen and (max-width: 425px) {
   :root {

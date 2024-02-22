@@ -153,7 +153,7 @@ export default class App extends Component<{}, State> {
         {this.state.showHelpDialog ? <Modal>
           <div id='help-dialog'>
             <p>
-            <strong>{`Serble`}</strong>{` je srpska verzija popularne slagalice pod nazivom Vordle. Glavni cilj je pogoditi naznake o tome koja slova se nalaze u reči i gde se pojavljuju.`}
+            <strong>{`Serble`}</strong>{` je srpska verzija popularne slagalice pod nazivom `}<strong>{`Wordle.`}</strong>{` Glavni cilj je pogoditi zadatu reč koristeći naznake o tome koja slova se nalaze u reči i gde se pojavljuju.`}
             </p>
             <p><strong>{`Postoje 3 nivoa igre`}</strong></p>
             <p>
@@ -163,7 +163,7 @@ export default class App extends Component<{}, State> {
                 <li>{`Teško (7 slova; 8 pokušaja)`}</li>
               </ul>
             </p>
-            <p>{`Igra traje sve dok ne pogodite traženu reč, dok vam ne istekne vreme ili dok ne iskoristite sve pokušaje. Broj pokušaja zavisi od nivoa, dok na svakom nivou imate 60 sekundi za pogađanje.`}</p>
+            <p>{`Igra traje sve dok ne pogodite traženu reč, dok vam ne istekne vreme ili dok ne iskoristite sve pokušaje. Broj pokušaja zavisi od nivoa, dok na svakom nivou imate `}<strong>{`2 minute`}</strong>{` za pogađanje.`}</p>
             <p>{`Reč pogađate unosom iste u polje za unos i pritiskom na taster `}<strong>"Enter"</strong>{`. Solva Vaše reči biće upisana u tabelu i igra će Vam dati naznake o slovima te reči.`}</p>
             <p><strong>{`Značenje naznaka:`}</strong></p>
             <p>
