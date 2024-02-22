@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/serble/static/css/main.72a563ba.css",
-    "main.js": "/serble/static/js/main.f9c83dc0.js",
+    "main.css": "/serble/static/css/main.4e0ff807.css",
+    "main.js": "/serble/static/js/main.482909b1.js",
     "static/js/453.b6d1987b.chunk.js": "/serble/static/js/453.b6d1987b.chunk.js",
     "static/media/help.svg": "/serble/static/media/help.f834ed77f9562ddbc705349bfcea6d88.svg",
     "index.html": "/serble/index.html",
-    "main.72a563ba.css.map": "/serble/static/css/main.72a563ba.css.map",
-    "main.f9c83dc0.js.map": "/serble/static/js/main.f9c83dc0.js.map",
+    "main.4e0ff807.css.map": "/serble/static/css/main.4e0ff807.css.map",
+    "main.482909b1.js.map": "/serble/static/js/main.482909b1.js.map",
     "453.b6d1987b.chunk.js.map": "/serble/static/js/453.b6d1987b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72a563ba.css",
-    "static/js/main.f9c83dc0.js"
+    "static/css/main.4e0ff807.css",
+    "static/js/main.482909b1.js"
   ]
 }
